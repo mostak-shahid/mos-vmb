@@ -1,0 +1,22 @@
+.mos-vmb-wrapper .nav.nav-tabs {
+  margin-bottom: 0;
+}
+.mos-vmb-wrapper .nav.nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.mos-vmb-wrapper .nav.nav-tabs li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #eaeaea;
+}
+.mos-vmb-wrapper .nav.nav-tabs li.active a {
+  background-color: #ffffff;
+  box-shadow: none;
+  outline: none;
+}
+.mos-vmb-wrapper .tab-con {
+  padding: 30px;
+  background-color: #ffffff;
+}
