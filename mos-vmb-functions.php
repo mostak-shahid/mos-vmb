@@ -84,7 +84,7 @@ add_action( 'wp_footer', 'mos_vmb_scripts', 100 );
 function mos_vmb_add_handling_fee() {
 	global $mos_vmb_options;
     if ( is_admin() && ! defined( 'DOING_AJAX' ) ) return;
-	if($mos_vmb_options['mos_vmb_enable']){
+	if(@$mos_vmb_options['mos_vmb_enable']){
 		global $woocommerce;
 		global $new_total_tax;
 		$tax = new WC_Tax();
@@ -167,7 +167,7 @@ add_action( 'woocommerce_cart_totals_before_order_total', 'mos_vmb_display_cart_
  */
 function mos_vmb_display_cart_totals_after() {
 	global $mos_vmb_options;
-	if($mos_vmb_options['mos_vmb_enable']){
+	if(@$mos_vmb_options['mos_vmb_enable']){
 		global $woocommerce;
 		global $new_total_tax;
 		$tax = new WC_Tax();
